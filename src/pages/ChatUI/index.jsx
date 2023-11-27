@@ -2,6 +2,7 @@ import React from "react";
 
 import { Button, Img, Input, Text } from "components";
 import Header from "components/Header";
+import { Link } from "react-router-dom";
 
 const ChatUIPage = () => {
   return (
@@ -67,12 +68,14 @@ const ChatUIPage = () => {
                   >
                     <Img src="images/img_music.svg" alt="music" />
                   </Button>
-                  <Text
-                    className="leading-[120.00%] ml-0.5 md:ml-[0] text-black-900 text-lg tracking-[-0.36px] w-[95%] sm:w-full"
-                    size="txtInterSemiBold18"
-                  >
-                    Talk to a medical personel
-                  </Text>
+                  <Link to="/chatmessages">
+                    <Text
+                      className="leading-[120.00%] ml-0.5 md:ml-[0] text-black-900 text-lg tracking-[-0.36px] w-[95%] sm:w-full"
+                      size="txtInterSemiBold18"
+                    >
+                      Talk to a MedChat
+                    </Text>
+                  </Link>
                 </div>
               </div>
             </div>

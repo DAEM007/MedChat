@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Button, Img, Text } from "components";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
@@ -8,11 +9,13 @@ const Header = (props) => {
       <header className="bg-white-A700 border-b border-black-900 border-solid flex h-[72px] md:h-auto items-center justify-center px-16 md:px-5 w-full">
         <div className="flex md:flex-col flex-row gap-8 items-center justify-between w-full">
           <div className="header-row my-1.5">
-            <Img
-              className="h-[27px] w-[63px]"
-              src="images/img_content.svg"
-              alt="content"
-            />
+            <Link to="/">
+              <Img
+                className="h-[27px] w-[63px]"
+                src="images/img_content.svg"
+                alt="content"
+              />
+            </Link>
             <div className="mobile-menu">
               <div></div>
               <div></div>
