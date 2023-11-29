@@ -2,7 +2,6 @@ import React from "react";
 import {Img, Text } from "components";
 import Header from "components/Header";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 const ChatUIPage = () => {
 
