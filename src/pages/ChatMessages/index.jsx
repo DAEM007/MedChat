@@ -5,7 +5,7 @@ import Header from "components/Header";
 const ChatMessagesPage = () => {
   return (
     <>
-      <div className="bg-blue_gray-900 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[165px] justify-start mx-auto pb-2.5 w-full">
+      <div className="bg-blue_gray-900 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[165px] justify-start mx-auto pb-2.5 w-full md:h-screen">
         <Header className="flex flex-col items-center w-full" />
         <div className="flex flex-col font-inter items-end md:px-10 sm:px-5 px-[274px] w-full">
           <div className="flex flex-col items-start justify-start w-[93%] md:w-full">
@@ -75,26 +75,14 @@ const ChatMessagesPage = () => {
             <div className="flex md:flex-col flex-row gap-5 items-center justify-start mt-[60px] w-auto md:w-full">
               <Input
                 name="language"
-                placeholder="Malaria symptoms                                                     "
+                placeholder="Malaria symptoms"
                 className="!p-0 md:text-[22px] placeholder:text-white-A700 sm:text-xl text-2xl text-left tracking-[-0.48px] w-full"
                 wrapClassName="!p-[5px] flex max-w-[828px] md:w-full w-screen"
-                suffix={
-                  <Img
-                    className="h-12 my-auto"
-                    src="images/img_barcode.svg"
-                    alt="barcode"
-                  />
-                }
                 shape="round"
                 color="purple_A100"
                 size="sm"
                 variant="outline"
               ></Input>
-              <Img
-                className="h-12 w-12"
-                src="images/img_thumbsup.svg"
-                alt="thumbsup"
-              />
             </div>
           </div>
         </div>
