@@ -56,7 +56,7 @@ const ChatUIPage = () => {
                     className="leading-[120.00%] mb-5 ml-2.5 md:ml-[0] text-black-900 text-lg tracking-[-0.36px] w-[95%] sm:w-full"
                     size="txtInterSemiBold18"
                   >
-                    Talk to a medical personnel
+                    Get started with MedChat here...
                   </Text>
                 </Link>
               </div>
