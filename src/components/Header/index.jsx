@@ -10,11 +10,11 @@ const Header = (props) => {
         <div className="flex md:flex-col flex-row gap-8 items-center justify-between w-full">
           <div className="header-row my-1.5">
             <Link to="/">
-              <Img
-                className="h-[27px] w-[63px]"
-                src="images/img_content.svg"
-                alt="content"
-              />
+              <Text
+                className="h-[27px] w-[63px] text-3xl"
+              >
+                Med<span className="text-teal-A700">Chat</span>
+              </Text>
             </Link>
             <div className="mobile-menu">
               <div></div>
