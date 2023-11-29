@@ -1,11 +1,11 @@
 import React from "react";
-import { Button, Img, Input, Text } from "components";
+import { Input, Text } from "components";
 import Header from "components/Header";
 
 const ChatMessagesPage = () => {
   return (
     <>
-      <div className="bg-blue_gray-900 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[165px] justify-start mx-auto pb-2.5 w-full md:h-screen">
+      <div className="bg-blue_gray-900 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[165px] justify-start mx-auto pb-2.5 w-full ~md:h-screen">
         <Header className="flex flex-col items-center w-full" />
         <div className="flex flex-col font-inter items-end md:px-10 sm:px-5 px-[274px] w-full">
           <div className="flex flex-col items-start justify-start w-[93%] md:w-full">
