@@ -1,7 +1,8 @@
 import React from "react";
-import { Button, Img, Input, Text } from "components";
+import {Img, Text } from "components";
 import Header from "components/Header";
 import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const ChatUIPage = () => {
 
@@ -22,7 +23,7 @@ const ChatUIPage = () => {
               <div className="bg-purple-A100 flex flex-col sm:gap-10 md:gap-5 gap-[69px] items-start justify-start md:m-5 p-5 rounded-[30px] w-full">
                 <Img
                   className="h-[60px] mt-1 rounded-[10px] w-[60px]"
-                  src="images/img_close_purple_100.svg"
+                  src="images\img_lungs.svg"
                   alt="close"
                 />
                 <Text
@@ -35,7 +36,7 @@ const ChatUIPage = () => {
               <div className="bg-teal-A400 flex flex-col sm:gap-10 md:gap-5 gap-[69px] items-start justify-start md:m-5 p-5 rounded-[30px] w-full">
                 <Img
                   className="h-[33px] md:ml-[0] ml-[3px] mt-[15px]"
-                  src="images/img_map.svg"
+                  src="images\img_location.svg"
                   alt="map"
                 />
                 <Text
@@ -45,18 +46,20 @@ const ChatUIPage = () => {
                   Locate a nearby hospital around you
                 </Text>
               </div>
-              <div className="bg-blue_gray-100 flex flex-col md:gap-10 gap-[66px] items-start justify-start md:m-5 p-2 rounded-[30px] w-full">
-                <Img
-                  className="h-[27px] ml-3 md:ml-[0] mt-[27px]"
-                  src="images/img_map.svg"
-                  alt="mapone"
-                />
-                <Text
-                  className="leading-[120.00%] mb-5 ml-2.5 md:ml-[0] text-black-900 text-lg tracking-[-0.36px] w-[95%] sm:w-full"
-                  size="txtInterSemiBold18"
-                >
-                  Talk to a medical personnel
-                </Text>
+              <div className="bg-blue_gray-100 flex flex-col md:gap-10 gap-[69px] items-start justify-start md:m-5 p-10 rounded-[30px] w-full">
+                <Link to="/chatmessages">
+                  <Img
+                    className="h-[33px] md:ml-[0] ml-[3px] mt-[27px]"
+                    src="images\img_medicalequipment.svg"
+                    alt="medicalEquipment"
+                  />
+                  <Text
+                    className="leading-[120.00%] mb-5 ml-2.5 md:ml-[0] text-black-900 text-lg tracking-[-0.36px] w-[95%] sm:w-full"
+                    size="txtInterSemiBold18"
+                  >
+                    Talk to a medical personnel
+                  </Text>
+                </Link>
               </div>
             </div>
             <div className="flex md:flex-col flex-row gap-5 items-center md:items-center justify-center md:justify-start md:m-[] max-w-screen-sm md:ml-[] md:mr-[] md:mt-[] w-full">
